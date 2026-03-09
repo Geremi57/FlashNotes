@@ -1,7 +1,7 @@
 name: continuos intergration
 
 on:pull_request:
-branches: [master]
+branches: [main]
 
 jobs:test_pull_request:
 runs-on: ubuntu-latest
