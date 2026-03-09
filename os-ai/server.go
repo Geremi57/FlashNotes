@@ -23,7 +23,7 @@ type Response struct {
 
 func main() {
     // scanner := bufio.NewScanner(os.Stdin)
-	apikey := os.Getenv("OPENROUTER_API_KY")
+	apikey := os.Getenv("OPENROUTER_API_KEY")
 	if apikey == ""{
 	log.Fatal("api key is required")
 	}
@@ -106,7 +106,7 @@ if r.Method == http.MethodOptions {
             openai.SystemMessage(spaceSystemPrompt),
 			openai.UserMessage(req.Input),
 		}
-
+        
         model := "meta-llama/llama-3.1-8b-instruct"
         fmt.Println("whats your question?")
         // scanner.Scan()
