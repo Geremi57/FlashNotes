@@ -106,6 +106,7 @@ if r.Method == http.MethodOptions {
             openai.SystemMessage(spaceSystemPrompt),
 			openai.UserMessage(req.Input),
 		}
+        
         model := "meta-llama/llama-3.1-8b-instruct"
         fmt.Println("whats your question?")
         // scanner.Scan()
